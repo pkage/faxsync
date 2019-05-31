@@ -30,7 +30,7 @@ If you do, here are some notes:
     - You'll also need to add a `Imports FAXCOMEXLib` to the top of the file.
     - Skip the line which has the `objFaxServer.Folders.IncomingArchive.Refresh()` method, this will fail with `0x80070032 Operation Failed.`
        - Googling this will not help. Why is it there? Why is it like this? A mystery lost to the ages.
- - `FaxIncomingMessage`'s `TransmissionEnd` date does not exist. It's an invalid date.
+ - `FaxIncomingMessage`'s `TransmissionStart` date does not exist. It's an invalid date.
  - (At least with our fax system), `FaxIncomingMessage`'s `SenderFaxNumber` doesn't exist, rather it's a part of the `CallerId` string 
 
 Useful links:
